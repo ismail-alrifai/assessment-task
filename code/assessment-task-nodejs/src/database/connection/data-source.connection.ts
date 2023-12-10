@@ -12,8 +12,8 @@ export const AppDataSource = new DataSource({
   type: "sqlite",
   database: "db/sql",
   logging: false,
-  synchronize: false,
-  entities: ["**/*.entity.js"],
+  synchronize: true,
+  entities: ["dist/**/*.entity.js"],
   migrations: ["**/*.migration.ts"],
 });
 
