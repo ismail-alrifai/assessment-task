@@ -20,7 +20,7 @@ const Home = () => {
     event.preventDefault();
 
     const response = await (
-      await fetch("http://localhost:3000/geo-location", {
+      await fetch("https://assessment-task.onrender.com/geo-location", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
