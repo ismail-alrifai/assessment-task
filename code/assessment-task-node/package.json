@@ -1,0 +1,11 @@
+{
+  "name": "assessment-task-node",
+  "version": "1.0.0",
+  "description": "GeoLocator Application with Email Functionality and Database Integration.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ismail Alrifai",
+  "license": "ISC"
+}
