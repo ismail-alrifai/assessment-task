@@ -1,11 +1,4 @@
-import {
-  IsEmail,
-  IsLatitude,
-  IsLongitude,
-  IsNotEmpty,
-  IsString,
-  Length,
-} from "class-validator";
+import { IsEmail, IsLatitude, IsLongitude, IsString } from "class-validator";
 
 export class EmailGeoLocationValidationSchema {
   @IsString()

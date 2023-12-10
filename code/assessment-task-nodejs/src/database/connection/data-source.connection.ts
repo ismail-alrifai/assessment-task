@@ -4,6 +4,8 @@ import { DataSource } from "typeorm";
 import { config } from "dotenv";
 import { join } from "path";
 
+import { GeoLocation } from "../entity";
+
 config({
   path: join(__dirname, "..", "..", "..", ".env"),
 });
@@ -13,7 +15,7 @@ export const AppDataSource = new DataSource({
   database: "db/sql",
   logging: false,
   synchronize: true,
-  entities: ["dist/**/*.entity.js"],
+  entities: [GeoLocation],
   migrations: ["**/*.migration.ts"],
 });
 
