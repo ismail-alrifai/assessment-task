@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "start": "cd dist && serve -s",
-    "build": "npm i -g serve typescript && tsc && vite build",
+    "build": "npm i serve typescript && tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
