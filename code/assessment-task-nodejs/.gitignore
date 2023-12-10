@@ -1,0 +1,17 @@
+
+# ignore editors folders
+.vscode/
+.idea/
+
+# ignore node_modules folder
+node_modules/
+
+# ignore dist folder
+dist/
+
+# ignore tmp folders
+temp/
+tmp/
+
+# ignore .env file
+.env
