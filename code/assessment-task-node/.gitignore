@@ -1,0 +1,11 @@
+# ignore node modules
+/node_modules
+
+# ignore dist folder
+/dist
+
+# ignore .vscode folder
+/.vscode
+
+# ignore env
+.env
