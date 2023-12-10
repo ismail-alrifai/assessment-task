@@ -1,20 +1,25 @@
 import { createTransport } from "nodemailer";
+import { config } from "dotenv";
+import { join } from "path";
 
 import { GeoLocation } from "../database";
 
+config({
+  path: join(__dirname, "..", "..", ".env"),
+});
+
 const transporter = createTransport({
-  host: "sandbox.smtp.mailtrap.io",
-  port: 2525,
+  service: "hotmail",
   auth: {
-    user: "d93f0068260c9f",
-    pass: "43c339d091fd09",
+    user: process.env.MAILER_EMAIL,
+    pass: process.env.MAILER_PASSWORD,
   },
 });
 
 export const sendEmail = (geoLocation: GeoLocation, email: string) => {
   transporter
     .sendMail({
-      from: "d93f0068260c9f",
+      from: process.env.MAILER_EMAIL,
       to: email,
       subject: "You received a GeoLocation! Check It.",
       text: `
