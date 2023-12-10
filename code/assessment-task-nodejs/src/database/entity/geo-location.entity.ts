@@ -20,7 +20,8 @@ export class GeoLocation {
   latitude!: string;
 
   @Column({
-    type: "longtext",
+    type: "varchar",
+    length: 1024,
     nullable: false,
   })
   location!: string;

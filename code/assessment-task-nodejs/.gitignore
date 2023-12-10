@@ -9,6 +9,9 @@ node_modules/
 # ignore dist folder
 dist/
 
+# ignore sqlite database folder
+db/
+
 # ignore tmp folders
 temp/
 tmp/
